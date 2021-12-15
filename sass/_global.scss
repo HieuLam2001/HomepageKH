@@ -4,7 +4,7 @@ body {
   font-weight: 400;
   line-height: 1;
   font-family: $font-primary;
-  background-color: $white-bg;
+  background-color: #fff;
   font-weight: 400;
   color: #333;
   -webkit-font-smoothing: antialiased;
@@ -89,6 +89,13 @@ p {
     text-align: center;
     justify-content: center;
   }
+  .item-title-heading {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .row .customer-item .item-title-heading {
+    margin: 10px 0 !important;
+  }
 }
 #button {
   display: inline-block;
@@ -99,7 +106,7 @@ p {
   visibility: hidden;
   z-index: 1000;
   bottom: 30px;
-  right: 10px;
+  right: 30px;
   background: #4fcac4;
   padding: 10px;
   border-radius: 9px;
@@ -109,7 +116,6 @@ p {
   height: 50px;
 }
 #button i {
-
   font-size: 2em;
 
   color: #fff;
@@ -154,4 +160,22 @@ p {
 .content h3 {
   font-style: italic;
   color: #96a2a7;
+}
+@media (max-width: 991px) {
+  .title-slide,
+  .title-paradigm {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  .section-slider{
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 375px) { .title-slide,
+.title-paradigm , .item-title-heading {
+  font-size: 25px !important;
+  line-height: 1.4 !important;
+}
+
 }
