@@ -1,0 +1,115 @@
+.footer-site {
+  position: relative;
+  max-height: 1000px;
+  overflow: hidden;
+  background-image: url(http://vtracking.viettel.vn/Images/Vtracking_V2/images/photos/footer.png);
+  background-size: 1920px auto;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 90px;
+}
+.item-top {
+  display: flex;
+
+  align-items: center;
+}
+.title-footer {
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.footer-bottom h4 {
+  font-size: 20px;
+  color: #fff;
+  font-family: Montserrat-SemiBold, sans-serif;
+  line-height: 1.5;
+  text-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+}
+.mg-bt-15 {
+  margin-bottom: 15px;
+}
+.footer-bottom .footer__info .footer__info-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+.footer-bottom .footer__info .footer__info-item p {
+  color: #fff;
+  font-size: 15px;
+  display: inline-block;
+}
+.footer-bottom .footer__info .footer__info-item img {
+  float: left;
+  margin-right: 10px;
+  height: 16px;
+  margin-top: 5px;
+}
+.footer__contact {
+  display: flex;
+  justify-content: space-between;
+
+}
+.footer__contact .contact-left .contact-btn {
+  display: inline-block;
+
+  margin-left: 15px;
+}
+.footer__contact .contact-left .contact-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1ca892;
+  padding: 12px 24px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 1px 1px 1px 1px rgb(0 0 0 / 10%);
+  transition: all 1s ease;
+  font-weight: 600;
+}
+.footer__contact .contact-right {
+  padding-top: 10px;
+}
+.footer__contact .contact-right p {
+  color: #fff;
+}
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px 10px 0 10px;
+}
+.img-app a {
+  margin-right: 15px;
+}
+.box-item-top {
+  margin-top: 55px;
+}
+.footer__info-item.mg-bt-15.ic-local::before {
+  content: url(http://vtracking.viettel.vn/Images/Vtracking_V2/images/images/icon-21.svg);
+  margin-right: 5px;
+}
+.contact-btn .item-contact::before {
+  content: url(http://vtracking.viettel.vn/Images/Vtracking_V2/images/images/icon-contact.png);
+  margin-right: 10px;
+  transform: scale(0.7);
+}
+@media (max-width: 1200px) {
+  .footer-site {
+    background-size: 100% 100%;
+  }
+  .box-item-top {
+    margin-top: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-site {
+    background-size: cover;
+    padding:0 10px
+  }
+  .item-bg, .item-customer .item-bg {
+    background-size: cover;
+}
+.box-item-top{
+    margin-top:50px
+}
+}

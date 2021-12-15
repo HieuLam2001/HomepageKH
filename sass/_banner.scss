@@ -1,0 +1,85 @@
+.section-banner {
+  position: relative;
+  background-image: url(http://vtracking.viettel.vn/Images/Vtracking_V2/images/photos/banner1.png);
+  background-size: 1920px 640px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+.banner-left {
+  padding-right: 70px;
+  .caption-banner {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .text-banner {
+    margin-bottom: 40px;
+    font-family: Roboto-Regular, sans-serif;
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.7;
+  }
+  .btn-banner {
+    display: inline-block;
+    margin-bottom: 35px;
+    &-item {
+      padding: 12px 24px;
+      border-radius: 40px;
+      line-height: 1.3;
+      font-weight: 500;
+      transition: all 1s ease;
+      margin-right: 5px !important;
+      background-color: #fff;
+      color: #2ca2a0;
+      box-shadow: 1px 1px 1px 1px rgb(0 0 0 / 10%);
+      transition: all 0.5s ease;
+      font-size: 14px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .section-banner {
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-photo,
+  .wrap-images-header {
+    height: 300px;
+    text-align: center;
+  }
+  .section-banner {
+    background-size: cover !important;
+    height: auto !important;
+    padding-bottom: 70px;
+    padding-top: 80px;
+    background-position: top center !important;
+  }
+  .banner-left {
+    padding-right: 0;
+  }
+  .banner-left .caption-banner {
+    font-size: 25px;
+    line-height: 1.4;
+  }
+}
+@media (min-width: 1200px) {
+  .section-banner {
+    height: 100vh;
+  }
+}
+@media (max-width: 1200px) {
+  .section-banner {
+    background-size: cover;
+    background: url(http://vtracking.viettel.vn/Images/Vtracking_V2/images/photos/banner.png);
+    background-repeat: no-repeat;
+    height: 60vh;
+  }
+  .banner-right {
+    margin-left: auto;
+  }
+}

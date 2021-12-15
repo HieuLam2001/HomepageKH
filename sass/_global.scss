@@ -1,0 +1,157 @@
+body {
+  font-size: 16px;
+  color: $gray-dark;
+  font-weight: 400;
+  line-height: 1;
+  font-family: $font-primary;
+  background-color: $white-bg;
+  font-weight: 400;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  width: 100vw;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+in-site {
+  padding-top: 90px;
+}
+h2 {
+  font-size: 36px;
+  line-height: 50px;
+  color: #3a3c41;
+  font-weight: 700;
+}
+p {
+  font-size: 15px;
+  color: #333;
+  line-height: 27px;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  outline: 0 !important;
+}
+.main-site {
+  padding-top: 60px;
+}
+.item-title-heading {
+  margin-bottom: 25px;
+}
+.item-des-heading {
+  margin: 0 auto;
+  font-family: Roboto-Regular, sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+  width: 60%;
+}
+.item-des-heading {
+  line-height: 25px;
+  width: 50%;
+  display: inline-block;
+  font-family: Roboto-Regular, sans-serif;
+}
+.mr-25 {
+  margin: 25px;
+}
+.ic-email::before {
+  content: url(http://vtracking.viettel.vn/Images/Vtracking_V2/images/images/icon-2.svg);
+  margin-right: 10px;
+}
+.ic-phone::before {
+  content: url(http://vtracking.viettel.vn/Images/Vtracking_V2/images/images/icon-1.svg);
+  margin-right: 10px;
+}
+@media screen and (max-width: 992px) {
+  .item-des-heading {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .paradigm-right .item-caption .wrap-image {
+    width: 150px;
+    margin: 5px auto;
+    height: 150px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+}
+#button {
+  display: inline-block;
+  text-align: center;
+  position: fixed;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  bottom: 30px;
+  right: 10px;
+  background: #4fcac4;
+  padding: 10px;
+  border-radius: 9px;
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+#button i {
+
+  font-size: 2em;
+
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styles for the content section */
+
+.content {
+  width: 77%;
+  margin: 50px auto;
+  font-family: "Merriweather", serif;
+  font-size: 17px;
+  color: #6c767a;
+  line-height: 1.9;
+}
+@media (min-width: 500px) {
+  .content {
+    width: 43%;
+  }
+  #button {
+    margin: 30px;
+  }
+}
+.content h1 {
+  margin-bottom: -10px;
+  color: #03a9f4;
+  line-height: 1.5;
+}
+.content h3 {
+  font-style: italic;
+  color: #96a2a7;
+}
