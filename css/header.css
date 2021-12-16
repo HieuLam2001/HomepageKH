@@ -1,0 +1,711 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-size: 16px;
+  color: #333;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  font-weight: 400;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+in-site {
+  padding-top: 90px;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 50px;
+  color: #3a3c41;
+  font-weight: 700;
+}
+
+p {
+  font-size: 15px;
+  color: #333;
+  line-height: 27px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  outline: 0 !important;
+}
+
+.main-site {
+  padding-top: 60px;
+}
+
+.item-title-heading {
+  margin-bottom: 25px;
+}
+
+.item-des-heading {
+  margin: 0 auto;
+  font-family: Roboto-Regular, sans-serif;
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+  width: 60%;
+}
+
+.item-des-heading {
+  line-height: 25px;
+  width: 50%;
+  display: inline-block;
+  font-family: Roboto-Regular, sans-serif;
+}
+
+.mr-25 {
+  margin: 25px;
+}
+
+.ic-email::before {
+  content: url(http://vtracking.viettel.vn/Images/Vtracking_V2/images/images/icon-2.svg);
+  margin-right: 10px;
+}
+
+.ic-phone::before {
+  content: url(http://vtracking.viettel.vn/Images/Vtracking_V2/images/images/icon-1.svg);
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .item-des-heading {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .paradigm-right .item-caption .wrap-image {
+    width: 150px;
+    margin: 5px auto;
+    height: 150px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .item-title-heading {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .row .customer-item .item-title-heading {
+    margin: 10px 0 !important;
+  }
+}
+#button {
+  display: inline-block;
+  text-align: center;
+  position: fixed;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  bottom: 30px;
+  right: 30px;
+  background: #4fcac4;
+  padding: 10px;
+  border-radius: 9px;
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+#button i {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+#button:active {
+  background-color: #555;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styles for the content section */
+.content {
+  width: 77%;
+  margin: 50px auto;
+  font-family: "Merriweather", serif;
+  font-size: 17px;
+  color: #6c767a;
+  line-height: 1.9;
+}
+
+@media (min-width: 500px) {
+  .content {
+    width: 43%;
+  }
+
+  #button {
+    margin: 30px;
+  }
+}
+.content h1 {
+  margin-bottom: -10px;
+  color: #03a9f4;
+  line-height: 1.5;
+}
+
+.content h3 {
+  font-style: italic;
+  color: #96a2a7;
+}
+
+@media (max-width: 991px) {
+  .title-slide,
+.title-paradigm {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+
+  .section-slider {
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .title-slide,
+.title-paradigm, .item-title-heading {
+    font-size: 25px !important;
+    line-height: 1.4 !important;
+  }
+}
+.header {
+  color: #fff;
+  background-color: #1c9f9c;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 50px;
+}
+.header .header-top {
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.header .header-top .header-top-item .header-top-contact {
+  text-align: left;
+}
+.header .header-top .header-top-item .header-top-contact .contact-link {
+  margin-right: 30px;
+  color: #fff;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+.header .header-top .header-top-item .header-top-contact .contact-link span {
+  font-weight: 600;
+}
+
+.header-bottom {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 0;
+  min-height: 54px;
+}
+.header-bottom-logo {
+  width: 150px;
+}
+.header-bottom-menu {
+  display: flex;
+  margin-left: auto;
+}
+.header-bottom-menu .btn-login-header .btn-login {
+  background: #fff;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+  font-weight: 600;
+  font-size: 14px;
+}
+.header-bottom-menu .btn-login-header .btn-login::before {
+  content: url(http://vtracking.viettel.vn/Images/Vtracking_V2/images/images/icon-sign-in-hover.svg);
+  margin-right: 10px;
+}
+.header-bottom-menu .btn-login-header a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 12px 24px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+}
+.header-bottom-menu .btn-login-header a span {
+  color: #1ca892;
+}
+
+.menu-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.menu-bottom-item:hover {
+  background: #fff;
+}
+
+.menu-bottom-item:hover .menu-bottom-link {
+  color: #1ca892;
+  transition: all 1s ease;
+}
+
+.menu-bottom-item {
+  list-style-type: none;
+  position: relative;
+  padding: 7px 10px;
+  border-radius: 5px;
+  line-height: 1;
+  border: none;
+  transition: all 1s ease;
+  margin-right: 20px;
+}
+.menu-bottom-item .menu-bottom-link {
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: Roboto-Bold, sans-serif;
+}
+
+.header-menu-mb {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .header-menu-mb .header-info-mobile a {
+    margin-right: 0;
+    color: #fff;
+  }
+
+  .header-menu-mb .header-info-mobile .info-mb-item {
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .header-top {
+    display: none;
+  }
+
+  .header .header-bottom-menu .menu-bottom,
+.btn-login-header.pc {
+    display: none;
+  }
+
+  .menu-bottom-item .menu-bottom-link {
+    font-size: 13px;
+  }
+
+  .header-menu-mb {
+    display: block;
+  }
+
+  .header-menu-mb {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 99999;
+    background-color: transparent;
+    border: none;
+    outline: 0;
+  }
+
+  .content-btn::after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    top: -14px;
+    right: 0px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+
+  .content-btn::before {
+    content: "";
+    width: 16px;
+    height: 2px;
+    position: absolute;
+    bottom: 14px;
+    right: 0px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+
+  .content-btn {
+    content: "";
+    width: 14px;
+    height: 2px;
+    position: absolute;
+    bottom: 14px;
+    right: 4px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+
+  .header-menu-mb .header-bottom-logo {
+    margin-right: auto;
+    padding: 10px 0;
+  }
+
+  .nav-bar {
+    position: absolute;
+    background-color: #2ca2a0;
+    top: 0;
+    right: 100%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    transition: position 2.9s;
+    -webkit-transition: position 2.9s;
+    -moz-transition: position 2.9s;
+    -ms-transition: position 2.9s;
+    -o-transition: position 2.9s;
+  }
+
+  .toggle {
+    left: 0;
+    box-shadow: 1px 0 15px 2px rgba(0, 0, 0, 0.4);
+  }
+
+  .toggle-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2px 2px 2px 3px;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+  }
+
+  .line {
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: transform 0.2s ease-out;
+    -webkit-transition: transform 0.2s ease-out;
+    -moz-transition: transform 0.2s ease-out;
+    -ms-transition: transform 0.2s ease-out;
+    -o-transition: transform 0.2s ease-out;
+  }
+
+  .toggle .line1 {
+    background-color: #fff;
+    transform: scale(0.9) rotateZ(-45deg) translate(-6px, 4px);
+  }
+
+  .toggle .line2 {
+    display: none;
+  }
+
+  .toggle .line3 {
+    background-color: #fff;
+    transform: scale(0.9) rotateZ(45deg) translate(-6px, -4px);
+  }
+
+  .nav-list {
+    list-style: none;
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .nav-list-item {
+    text-align: center;
+    padding: 10px 0;
+    margin: 8px auto;
+  }
+
+  .nav-link {
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 4px;
+  }
+
+  .nav-link::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: left;
+    -webkit-transition: transform 0.4s ease-in-out;
+    -moz-transition: transform 0.4s ease-in-out;
+    -ms-transition: transform 0.4s ease-in-out;
+    -o-transition: transform 0.4s ease-in-out;
+  }
+
+  .nav-link:hover::before {
+    transform: scaleX(1);
+  }
+
+  .btn-login-header {
+    margin: 15px 0;
+  }
+
+  .header-info-mobile {
+    display: flex;
+  }
+
+  .info-mb-item {
+    margin: 15px;
+  }
+
+  .header-info-mobile a {
+    margin-right: 30px;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header-info-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.footer-site {
+  position: relative;
+  max-height: 1000px;
+  overflow: hidden;
+  background-image: url(http://vtracking.viettel.vn/Images/Vtracking_V2/images/photos/footer.png);
+  background-size: 1920px auto;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 120px;
+}
+
+.item-top {
+  display: flex;
+  align-items: center;
+}
+
+.title-footer {
+  font-family: Montserrat-Bold, sans-serif;
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.footer-bottom h4 {
+  font-size: 20px;
+  color: #fff;
+  font-family: Montserrat-SemiBold, sans-serif;
+  line-height: 1.5;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  margin-top: 10px;
+}
+
+.mg-bt-15 {
+  margin-bottom: 15px;
+}
+
+.footer-bottom .footer__info .footer__info-item {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-bottom .footer__info .footer__info-item p {
+  color: #fff;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.footer-bottom .footer__info .footer__info-item img {
+  float: left;
+  margin-right: 10px;
+  height: 16px;
+  margin-top: 5px;
+}
+
+.footer__contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__contact .contact-left .contact-btn {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.footer__contact .contact-left .contact-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1ca892;
+  padding: 5px 20px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all 1s ease;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.footer__contact .contact-right {
+  padding-top: 10px;
+}
+
+.footer__contact .contact-right p {
+  color: #fff;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px 10px 0 10px;
+}
+
+.img-app a {
+  margin-right: 15px;
+}
+
+.box-item-top {
+  margin-top: 55px;
+}
+
+.footer__info-item.mg-bt-15.ic-local::before {
+  content: url(http://vtracking.viettel.vn/Images/Vtracking_V2/images/images/icon-21.svg);
+  margin-right: 5px;
+}
+
+.contact-btn .item-contact::before {
+  content: url(http://vtracking.viettel.vn/Images/Vtracking_V2/images/images/icon-contact.png);
+  margin-right: 10px;
+  transform: scale(0.7);
+}
+
+@media (max-width: 1200px) {
+  .footer-site {
+    background-size: 100% 100%;
+  }
+
+  .box-item-top {
+    margin-top: 120px;
+  }
+
+  .footer-top {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .footer-site {
+    background-size: cover;
+    max-height: 1200px;
+    padding-bottom: 100px;
+  }
+
+  .title-footer {
+    font-family: Montserrat-Bold, sans-serif;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .item-bg, .item-customer .item-bg {
+    background-size: cover;
+  }
+
+  .box-item-top {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-site {
+    background-size: 100% 100%;
+  }
+}
+@media (min-width: 1920px) {
+  .footer-site {
+    background-size: cover;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
