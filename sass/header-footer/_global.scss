@@ -43,6 +43,9 @@ p {
   font-family: inherit;
   outline: 0 !important;
 }
+li{
+  list-style-type: none;
+}
 .main-site {
   padding-top: 60px;
 }
@@ -169,7 +172,7 @@ p {
     margin-bottom: 10px;
   }
   .section-slider{
-    padding-bottom: 30px;
+    padding-bottom: 70px;
   }
 }
 @media screen and (max-width: 375px) { .title-slide,
