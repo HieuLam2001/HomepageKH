@@ -35,7 +35,7 @@ a {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 body {
@@ -247,7 +247,7 @@ li {
   color: #fff;
   background-color: #1c9f9c;
   position: fixed;
-  z-index: 9999;
+  z-index: 1000;
   top: 0;
   left: 0;
   width: 100vw;
