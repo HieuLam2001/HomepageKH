@@ -121,6 +121,55 @@ li {
   margin: 25px;
 }
 
+.banner {
+  padding-top: 95px;
+}
+
+.post-content {
+  margin: 30px 0;
+}
+
+.bg-title {
+  height: 120px;
+  background: linear-gradient(45deg, #2ca2a0 0, #42bf8f 100%);
+  background-size: 100% 100%;
+  color: #fff;
+}
+.bg-title .container {
+  height: 100%;
+}
+.bg-title .container .title-page {
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .bg-title {
+    height: 80px;
+  }
+}
+.title-page {
+  display: flex;
+  align-items: center;
+}
+.title-page h1 {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.breadcrumbs-page {
+  padding: 10px 30px 9px;
+  background: #efefef;
+}
+.breadcrumbs-page .container .fusion-breadcrumbs span {
+  color: #4f4f4f;
+  font-size: 12px;
+}
+.breadcrumbs-page .container .fusion-breadcrumbs .breadcrumb-leaf {
+  color: #111;
+  font-weight: 500;
+}
+
 .ic-email::before {
   content: url(http://vtracking.viettel.vn/Images/Vtracking_V2/images/images/icon-2.svg);
   margin-right: 10px;
@@ -565,6 +614,7 @@ li {
   align-items: center;
   justify-content: center;
   padding-bottom: 120px;
+  margin-top: 20px;
 }
 
 .item-top {
