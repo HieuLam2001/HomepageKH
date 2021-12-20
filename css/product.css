@@ -218,10 +218,14 @@
 .box-product .img-product {
   position: relative;
   margin-bottom: 15px;
+  height: 270px;
 }
 .box-product .img-product img {
-  border: 1px solid #ddd;
   width: 100%;
+  position: relative;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .box-product .addcart {
   display: none;
@@ -288,6 +292,11 @@
   color: #333;
 }
 
+@media screen and (max-width: 991px) {
+  .box-product .img-product {
+    height: 350px;
+  }
+}
 @media screen and (max-width: 767px) {
   .show-product {
     display: flex;
