@@ -118,6 +118,14 @@ li{
       }
     }
   }
+  @media screen and( max-width:768px) {
+    .banner{
+        padding-top: 60px;
+    }
+    .img-post{
+      margin-bottom: 20px;
+    }
+    }
 .ic-email::before {
   content: url(http://vtracking.viettel.vn/Images/Vtracking_V2/images/images/icon-2.svg);
   margin-right: 10px;
