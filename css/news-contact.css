@@ -294,6 +294,7 @@
   line-height: normal;
   font-size: 23px;
   color: #111;
+  padding: 20px 0;
 }
 .detail-post .share-icon {
   display: flex;
