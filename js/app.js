@@ -159,4 +159,20 @@ $(".img_producto_container")
           "%"
       });
   });
-  var modal = document.getElementById("myModal");
+ 
+
+
+
+
+  $(document).ready(function () {
+    $('#exampleModal').modal({
+        backdrop: 'static',
+        keyboard: false
+    });
+    if ($.cookie('checkModal') == null) {
+        setTimeout(function () { $('#exampleModal').modal('show') ; },600
+        );
+        $.cookie('checkModal', '1');
+    }
+});
+

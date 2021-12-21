@@ -43,9 +43,16 @@ p {
   font-family: inherit;
   outline: 0 !important;
 }
-li{
+li {
   list-style-type: none;
 }
+
+.btn-banner-item:hover {
+  background: $primary-color;
+  box-shadow: none;  color:#fff;
+ 
+}
+
 .main-site {
   padding-top: 60px;
 }
@@ -70,62 +77,69 @@ li{
 .mr-25 {
   margin: 25px;
 }
-.banner{
+.banner {
   padding-top: 95px;
-  }
-  
-  .post-content {
-    margin: 30px 0;
-  }
-  .bg-title {
-    height: 120px;
-    background: linear-gradient( 
-      45deg,#2ca2a0 0,#42bf8f 100%);
-    background-size: 100% 100%;
-    color: #fff;
-    .container {
+}
+
+.post-content {
+  margin: 50px 0 100px 0;
+}
+.bg-title {
+  height: 120px;
+  background: linear-gradient(45deg, #2ca2a0 0, #42bf8f 100%);
+  background-size: 100% 100%;
+  color: #fff;
+  .container {
+    height: 100%;
+    .title-page {
       height: 100%;
-      .title-page {
-        height: 100%;
-      }
     }
   }
-  @media (max-width: 768px) {
-    .bg-title {
-      height: 80px;
-    }
+}
+.modal-dialog {
+  top: 50%;
+  transform: translateY(-50%) !important;
+}
+.modal.fade{
+  transition:all 1s ease-in-out;
+ 
+
+}
+@media (max-width: 768px) {
+  .bg-title {
+    height: 80px;
   }
-  .title-page {
-    display: flex;
-    align-items: center;
-    h1 {
-      font-size: 28px;
+}
+.title-page {
+  display: flex;
+  align-items: center;
+  h1 {
+    font-size: 28px;
+    font-weight: 500;
+  }
+}
+.breadcrumbs-page {
+  padding: 10px 30px 9px;
+  background: #efefef;
+  .container .fusion-breadcrumbs {
+    span {
+      color: #4f4f4f;
+      font-size: 12px;
+    }
+    .breadcrumb-leaf {
+      color: #111;
       font-weight: 500;
-      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     }
   }
-  .breadcrumbs-page {
-    padding: 10px 30px 9px;
-    background: #efefef;
-    .container .fusion-breadcrumbs {
-      span {
-        color: #4f4f4f;
-        font-size: 12px;
-      }
-      .breadcrumb-leaf {
-        color: #111;
-        font-weight: 500;
-      }
-    }
+}
+@media screen and( max-width:768px) {
+  .banner {
+    padding-top: 60px;
   }
-  @media screen and( max-width:768px) {
-    .banner{
-        padding-top: 60px;
-    }
-    .img-post{
-      margin-bottom: 20px;
-    }
-    }
+  .img-post {
+    margin-bottom: 20px;
+  }
+}
 .ic-email::before {
   content: url(http://vtracking.viettel.vn/Images/Vtracking_V2/images/images/icon-2.svg);
   margin-right: 10px;
@@ -154,6 +168,9 @@ li{
   }
   .row .customer-item .item-title-heading {
     margin: 10px 0 !important;
+  }
+  .post-content,.contact, .detail-post{
+    margin-bottom: 50px ;
   }
 }
 #button {
@@ -227,14 +244,15 @@ li{
     line-height: 40px;
     margin-bottom: 10px;
   }
-  .section-slider{
+  .section-slider {
     padding-bottom: 70px;
   }
 }
-@media screen and (max-width: 375px) { .title-slide,
-.title-paradigm , .item-title-heading {
-  font-size: 25px !important;
-  line-height: 1.4 !important;
-}
-
+@media screen and (max-width: 375px) {
+  .title-slide,
+  .title-paradigm,
+  .item-title-heading {
+    font-size: 25px !important;
+    line-height: 1.4 !important;
+  }
 }

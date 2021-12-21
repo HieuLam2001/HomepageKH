@@ -92,6 +92,12 @@ li {
   list-style-type: none;
 }
 
+.btn-banner-item:hover {
+  background: #1ca892;
+  box-shadow: none;
+  color: #fff;
+}
+
 .main-site {
   padding-top: 60px;
 }
@@ -126,7 +132,7 @@ li {
 }
 
 .post-content {
-  margin: 30px 0;
+  margin: 50px 0 100px 0;
 }
 
 .bg-title {
@@ -142,6 +148,15 @@ li {
   height: 100%;
 }
 
+.modal-dialog {
+  top: 50%;
+  transform: translateY(-50%) !important;
+}
+
+.modal.fade {
+  transition: all 1s ease-in-out;
+}
+
 @media (max-width: 768px) {
   .bg-title {
     height: 80px;
@@ -154,7 +169,6 @@ li {
 .title-page h1 {
   font-size: 28px;
   font-weight: 500;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .breadcrumbs-page {
@@ -211,6 +225,10 @@ li {
 
   .row .customer-item .item-title-heading {
     margin: 10px 0 !important;
+  }
+
+  .post-content, .contact, .detail-post {
+    margin-bottom: 50px;
   }
 }
 #button {
@@ -296,7 +314,8 @@ li {
 }
 @media screen and (max-width: 375px) {
   .title-slide,
-.title-paradigm, .item-title-heading {
+.title-paradigm,
+.item-title-heading {
     font-size: 25px !important;
     line-height: 1.4 !important;
   }
@@ -623,7 +642,6 @@ li {
   align-items: center;
   justify-content: center;
   padding-bottom: 120px;
-  margin-top: 20px;
 }
 
 .item-top {
